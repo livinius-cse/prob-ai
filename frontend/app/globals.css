@@ -27,3 +27,5 @@ body {
 }
 
 .animate-rise { animation: rise 700ms ease-out both; }
+
+.line-clamp-3 { display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }

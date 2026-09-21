@@ -2,24 +2,30 @@
 
 ## Vision
 
-ForgeAI will turn real-world signals into structured engineering opportunities. The implementation in this repository is limited to the Phase 1 foundation: a frontend shell and a backend health service.
+ForgeAI will turn real-world signals into structured engineering opportunities. Phase 2A implements the live-news foundation: a regional frontend feed and a backend RSS service boundary.
 
-## Planned pipeline
+## Live-signal pipeline (Phase 2A)
 
 ```text
-Live News
+REGION
     ↓
-Problem Detection
+NEWS SOURCES
     ↓
-Root Cause Analysis
+SOURCE ADAPTERS
     ↓
-Existing Solutions
+NORMALIZATION
     ↓
-Innovation Gap
+GEOGRAPHIC CLASSIFIER
     ↓
-Engineering Opportunity
+CATEGORIES
     ↓
-Solution Blueprint
+DEDUPLICATION
+    ↓
+CACHE
+    ↓
+FORGEAI FEED
+    ↓
+FUTURE AI ANALYSIS
 ```
 
 ## Planned components (future phases)
@@ -42,4 +48,4 @@ Solution Blueprint
 
 ## Boundaries
 
-Phase 1 deliberately includes no news APIs, web scraping, AI providers, databases, authentication, vector search, or solution generation. Those integrations will be introduced only after the foundational UX and service boundary are stable.
+Phase 2A deliberately does **not** perform AI problem analysis, root-cause analysis, innovation-gap analysis, solution generation, or engineering-blueprint generation. It also has no database, authentication, vector search, or web scraping.
