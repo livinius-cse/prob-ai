@@ -49,3 +49,52 @@ FUTURE AI ANALYSIS
 ## Boundaries
 
 Phase 2A deliberately does **not** perform AI problem analysis, root-cause analysis, innovation-gap analysis, solution generation, or engineering-blueprint generation. It also has no database, authentication, vector search, or web scraping.
+
+## Phase 3 — Engineering Intelligence
+
+ForgeAI extends the live-news pipeline into a structured engineering-intelligence workflow.
+
+Current pipeline:
+
+LIVE NEWS
+↓
+NORMALIZATION
+↓
+ENGINEERING INTELLIGENCE
+↓
+PROBLEM
+↓
+ROOT CAUSE
+↓
+EXISTING SOLUTIONS
+↓
+LIMITATIONS
+↓
+INNOVATION GAP
+↓
+ENGINEERING OPPORTUNITY
+↓
+FUTURE SOLUTION BLUEPRINT
+
+### Evidence and Uncertainty
+
+Engineering intelligence must distinguish between information directly supported by a source and reasoning that has not been established by the source.
+
+Each intelligence claim uses an explicit evidence type:
+
+- `source_fact` — directly supported by the source article.
+- `analysis` — an analytical interpretation derived from available evidence.
+- `hypothesis` — a possible explanation that requires validation.
+- `unknown` — information that has not been established.
+
+Source-backed facts should retain a reference to the originating article where applicable.
+
+ForgeAI must not present unknown information as fact. In particular, the system must not invent casualty numbers, infrastructure conditions, root causes, existing solutions, or claims of novelty.
+
+### Phase 3A Status
+
+Phase 3A establishes the engineering-intelligence domain model, API boundary, frontend API contract, deterministic placeholder service, and validation tests.
+
+The current service is intentionally non-AI. It returns a clearly labelled `placeholder_not_ai` response with explicit unknown values.
+
+Real AI reasoning and external research are reserved for the next phase.
